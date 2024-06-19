@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<title>MyTravelVlogs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+
+        .template {
+            width: 100%;
+            height: auto;
+        }
+
+        .photo {
+            width:100%;
+            height: 839px;
+            background: url(images/fi.jpg) no-repeat center / cover;
+        }
+
+        .navbar {
+            color: black;
+            padding: 65px 0 0 100px;
+        }
+
+        ul, li, a {
+            color: black;
+            font-size: 25px;
+            font-family: poppins;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            
+        }
+
+        ul, li, a:hover {
+            color: #fca311;
+            transition: all 0.5s;
+        }
+
+        .home {
+            color: #fca311;
+            text-decoration: none;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .hl {
+            color:#000;
+            padding: 50px 0 0 100px;
+            font-size: 50px;
+            font-family: 'Book Antiqua', sans-serif;
+        }
+
+        #fb {
+            width: 250px;
+            height: 50px;
+            border-radius: 0.5rem;
+            border: none;
+            color: white;
+            background-color: black;
+            font-size: 25px;
+            font-family: poppins;
+            margin: 55px 0 0 100px;
+        }
+
+        #fb:hover {
+            color: #fca311;
+            border-radius:1em;
+            font-size:24px;
+            transition: all 0.5s;
+        }
+
+        #contact-us  {
+            color: black;
+            border: 2px solid black;
+            margin: 0 100px 0 300px;
+            padding: 0 10px 0px 10px;
+            border-radius: 0.5rem;
+        }
+
+         #contact-us:hover {
+            color: #fca311;
+            border-radius: 1em;
+            transition: all 0.5s;
+        }
+         .black{
+            color:white;
+            height:500px;
+            background-color:#232323;
+            text-align:center;
+        }
+         #sb {
+            width: 250px;
+            height: 50px;
+            border-radius: 0.5rem;
+            border: 2px solid white ;
+            color: white;
+            background: none;
+            font-size: 25px;
+            font-family: poppins;
+            align-self:center;
+            margin: 10px 0 0 0 ;
+        }
+         #sb:hover {
+            color: #fca311;
+            border-radius:1em;
+            font-size:24px;
+            transition: all 0.5s;
+        }
+         .black h2 {
+             font-size:50px;
+             font-family:poppins;
+             line-height:60px;
+             padding: 80px 0 0 0 ;
+        }
+           
+          .black p {
+             font-size:20px;
+             font-family:poppins;
+             padding: 5px 0 0 0 ;
+        }
+          .tp{
+             display:flex;
+             justify-content:space-around;
+             padding: 100px 0 0 0;
+         }
+          .tt{
+             font-size:35px;
+             font-family:poppins;
+             display:flex;
+             justify-content:space-around;
+             padding: 20px 0 0 0;
+         }
+           #tt2{
+             margin: 0 200px 0 280px;
+         }
+            #tt1:hover {
+            color: #fca311;
+            transition: all 0.5s;
+        }
+            #tt2:hover {
+            color: #fca311;
+            transition: all 0.5s;
+        }
+            #tt3:hover {
+            color: #fca311;
+            transition: all 0.5s;
+        }
+
+          .pp{
+             font-size:17px;
+             font-family:poppins;
+             display:flex;
+             justify-content:space-around;
+             padding: 10px 0 0 0;
+         }
+           #pp2{
+              text-align:center;
+         }
+           #pp3{
+              text-align:right;
+         }
+         .ai{
+           text-align:center;
+           padding: 150px 0 0 0;
+          }
+         .aip{
+          text-align:center;
+          padding: 100px 0 0 0;
+          font-size:80px;
+          font-family:poppins;
+          font-weight:bold;
+          line-height:100px;
+        }
+         #never:hover {
+            color: #fca311;
+            transition: all 0.5s;
+        }
+         #life{
+            font-size:25px;
+            font-family:poppins; 
+            font-weight:normal;
+          }
+         .khalsa{
+            display:flex;
+            padding: 250px 0 48px 150px;
+          }
+         #tp5{
+            height:322px;
+            margin: 0 0 0 20px;
+          }
+         #kt{
+           font-size:30px;
+           font-family:poppins;
+           text-align:bottom;
+         }
+          .black2 {
+           display:flex;
+           justify-content:space-between;
+           background-color:#232323;
+           height:872px;
+         }
+          .bc{
+           color:#fff;
+           font-size:50px;
+           font-family:poppins;
+           font-weight:bold;
+           padding: 160px 0 0 150px;
+          }
+          #bcp1{
+           line-height:50px;
+          }
+          #bcp2{
+           color:#fff;
+           font-size:20px;
+           font-family:poppins;
+           font-weight:bold;
+           padding: 50px 0 0 0px;
+          }
+          #bcp3{
+           color:#fff;
+           font-size:15px;
+           font-family:poppins;
+           font-weight:normal;
+           padding: 10px 0 0 0px;
+          }
+          #bcp4{
+           color:#fff;
+           font-size:20px;
+           font-family:poppins;
+           font-weight:bold;
+           padding: 50px 0 0 0px;
+          }
+          #bcp5{
+           color:#fff;
+           font-size:15px;
+           font-family:poppins;
+           font-weight:normal;
+           padding: 10px 0 0 0px;
+          }
+            .bp{
+            padding: 215px 150px 0 0;
+          }
+           .breath {
+           display:flex;
+           justify-content:space-between;
+          }
+           .text{
+           color:#000;
+           font-size:70px;
+           font-family:poppins;
+           font-weight:bold;
+           padding: 110px 0 0 150px;
+          }
+          #brp, #brp1{
+           line-height:80px;
+            }
+           #brp1{
+           color:#000;
+           font-size:100px;
+           font-family:poppins;
+           font-weight:bold;
+           }
+           #brp2{
+           color:#000;
+           font-size:20px;
+           font-family:poppins;
+           font-weight:lighter;
+           }
+           #brp3{
+           color:#000;
+           font-size:20px;
+           font-family:poppins;
+           font-weight:lighter;
+           }
+           #brp4{
+           color:#000;
+           font-size:20px;
+           font-family:poppins;
+           font-weight:lighter;
+           }
+           .brp{
+            padding: 160px 150px 0 0;
+          }
+           .say{
+           color:#000;
+           text-align:center;
+           font-size:90px;
+           line-height:90px;
+           font-family:poppins;
+           font-weight:bold;
+           padding: 275px 0 0 0;
+           }
+           #hr1{
+               height:2px;
+               width:800px;
+               background-color:#000;
+               margin: 45px 0 0 0;
+           }
+            #hr2{
+               height:2px;
+               width:800px;
+               background-color:#000;
+               margin: 20px 0 0 0;
+           }
+           #hr3{
+               height:2px;
+               width:800px;
+               background-color:#000;
+               margin: 20px 0 0 0;
+           }
+            #hr4{
+               height:2px;
+               width:800px;
+               background-color:#000;
+               margin: 20px 0 0 0;
+           }
+           #brp2, .plus{
+               display:inline-block;
+               margin: 0 180px 0 0;
+            }
+            #brp3, .plus{
+               display:inline;
+               margin: 0 167px 0 0;
+            }
+            #brp4, .plus{
+               display:inline;
+               margin: 0 195px 0 0;
+            }
+            .names{ 
+               padding:80px 0 0 0px;
+               display:flex;
+               justify-content:space-evenly;
+            }
+            .arrow1{
+                width: 65px;
+                align:right;
+                border-radius: 0.5rem;
+                border: 2px solid black;
+                position:absolute;
+                margin: 135px 0 0 1330px;
+                padding: 0 0 4px 12px;
+                background-color:#e9e7e7;
+                font-size: 35px;
+            }
+             .arrow2{
+                width: 65px;
+                align:right;
+                border-radius: 0.5rem;
+                border: 2px solid black;
+                position:absolute;
+                margin: 135px 1335px 0 0;
+                padding: 0 0 4px 12px;
+                background-color:#e9e7e7;
+                font-size: 35px;
+            }
+           .mehar{
+              width:325px;
+              height:325px;
+              border-radius: 0.5rem;
+              border: 2px solid black;
+              text-align:center;
+              padding: 50px 0 0 0;
+            }
+           #nm1{
+           font-size:20px;
+           font-family:poppins;
+           font-weight:bold;
+            }
+            #nm2{
+           font-size:15px;
+           font-family:poppins;
+           font-weight:normal;
+            }
+            .supra{
+              width:325px;
+              height:325px;
+              border-radius: 0.5rem;
+              border: 2px solid black;
+              text-align:center;
+              padding: 50px 0 0 0;
+            }
+            #ns1{
+           font-size:20px;
+           font-family:poppins;
+           font-weight:bold;
+            }
+            #ns2{
+           font-size:15px;
+           font-family:poppins;
+           font-weight:normal;
+            }
+            .bharat{
+              width:325px;
+              height:325px;
+              border-radius: 0.5rem;
+              border: 2px solid black;
+              text-align:center;
+              padding: 50px 0 0 0;
+            }
+            #nb1{
+           font-size:20px;
+           font-family:poppins;
+           font-weight:bold;
+            }
+            #nb2{
+           font-size:15px;
+           font-family:poppins;
+           font-weight:normal;
+            }
+             .form{
+               display:flex;
+               padding: 100px 0 0 0;
+               justify-content:space-between;
+            }
+             .ft{
+               padding: 200px 0 0 150px;
+             }
+             .fp{
+               padding: 135px 150px 200px 0;
+             }
+             #fh{
+               font-size:90px;
+               font-family:sylfaen;
+               font-weight:bold;   
+              }
+            #fn{
+              margin: 35px 0 0 0;
+              padding: 10px 0 10px 0;
+              border-radius: 0.5rem;
+              border: 3px solid black;
+              outline-offset:none;
+             }
+             #ln{
+              margin: 26px 0 0 0;
+              padding: 10px 0 10px 0;
+              border-radius: 0.5rem;
+              border: 3px solid black;
+              text-decoration:none;
+             }
+              #em{
+              margin: 26px 0 0 0;
+              padding: 10px 0 10px 0;
+              border-radius: 0.5rem;
+              border: 3px solid black;
+              outline-offset:none;
+             }
+             #wsh{
+              margin: 26px 0 0 0;
+              padding: 10px 0 10px 0;
+              border-radius: 0.5rem;
+              border: 3px solid black;
+              outline-offset:none;
+             }
+              #tb {
+            width: 500px;
+            height: 55px;
+            border-radius: 0.5rem;
+            border: none;
+            color: white;
+            background-color: black;
+            font-size: 25px;
+            font-family: poppins;
+            margin: 55px 0 0 0;
+        }
+           #tb:hover {
+            color: #fca311;
+            border-radius:1em;
+            font-size:24px;
+            transition: all 0.5s;
+        }
+        .footer{
+           display:flex;
+            height:400px;
+            background-color:#c4c4c4;
+         }
+        #fop{
+           font-size: 70px;
+           font-family:poppins;
+           font-weight:bold;
+           line-height: 70px;
+           padding: 100px 0 200px 100px;
+          }
+          .links{
+           font-family:poppins;
+           font-weight:normal;
+           line-height: 50px;
+           padding: 100px 0 0 90px;
+           }
+           .links1{
+           font-family:poppins;
+           font-weight:normal;
+           line-height: 50px;
+           padding: 202px 0 0 70px;
+           }
+           .links2{
+           font-family:poppins;
+           font-weight:normal;
+           line-height: 50px;
+           padding: 202px 0 0 70px;
+           }
+           .links3{
+           font-family:poppins;
+           font-weight:normal;
+           line-height: 50px;
+           padding: 202px 0 0 70px;
+           }
+           .lk{
+           font-size:22px;
+           }
+           #ql{
+           font-size: 30px;
+           font-family:poppins;
+           font-weight:bold;
+           padding: 0 0 50px 0;
+           }
+           .footer2{
+            font-size: 15px;
+            font-family:poppins;
+            font-weight:normal;
+            text-align:center;
+            height:100px;
+            padding:10px 0 0 0;
+            background-color:#c4c4c4;
+            }
+       </style>
+</head>
+<body>
+<div class="template">
+    <div class="photo">
+        <div class="navbar">
+            <ul>
+                <li><a class="home" href="#">Home</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">About</a></li>
+                <li><a id="contact-us" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="hl">
+            <h1>Travel to <br>your dream<br> destination</h1>
+        </div>
+        <button id="fb">Reserve Ticket</button>
+    </div>
+    <div class="black">
+                       <h2> Create a memory <br> to remember </h2>
+                       <p>India is home to several holy shrines and religious destinations of different faiths including<br> Sikhism, Christianity, Hinduism, Jainism, Islam, Buddhism and more. Several religions <br>have their roots in India. You can go through the packages catering to religious tours in <br>India and choose the one that best meets your requirements.</p>
+      <button id="sb"> My Travel Vlogs </button>
+     </div>
+       <div class="tp">
+            <img src="images/tp1.jpg">
+            <img src="images/tp2.jpg">
+            <img src="images/tp3.jpg">
+      </div>
+         <div class="tt">
+           <p id="tt1"> Kedarnath</p>
+           <p id="tt2"> Jagannath Temple</p>
+           <p id="tt3"> Hemkund Sahib</p>
+         </div>
+               <div class="pp">
+           <p id="pp1">The Pandavas were supposed to have pleased<br> Shiva by doing penance in Kedarnath. The temple<br> is one of the four major sites in India's Chota Char <br>Dham pilgrimage of Northern Himalayas.</p>
+           <p id="pp2"> An important pilgrimage in India, Jagannath <br>Temple is the finest monument in Odisha. The <br>main deities presiding over the temple are Lord <br>Jagannath, Balabhadra and Goddess Subhadra.</p>
+           <p id="pp3">Situated in one of the most scenic locations in the<br> country, Hemkund Sahib adds charm to religious <br>tours in India. Unlike other Sikh pilgrimages in <br>India, Hemkund Sahib has a pentagonal structure.
+</p>
+               </div>
+           <div class="ai">
+                   <img src="images/ai.png"> 
+           </div>
+            <div class="aip">
+                   <p> See places you’ve <br><i><u id="never" >never</u></i> been before</p>
+                   <p id="life">Live your life by a compass, not a clock.... </p>
+             </div>
+            <div class="khalsa">
+                    <img src="images/tp4.jpg">
+                    <img id="tp5" src="images/tp5.jpg">
+                    <p id="kt">The birth <br>place of </p>
+              </div>
+    <div class="black2">
+        <div class="bc">
+             <p id="bcp1"> Choose anywhere <br> you’d like to be </p>
+             <p id="bcp2"> Let’s Travel</p>
+             <p id="bcp3"> Traveling means that you're open to new experiences. It <br>means that you're brave enough to leave the comfort of<br> your own home to explore the unknown and find different<br> cultures and customs.</p>
+             <p id="bcp4">The Right Place</p>
+             <p id="bcp5"> By traveling to the right places is not only visiting a new place<br> or seeing new spots you never see before, it's also a chance<br> to know other people's culture and history! It gives you the<br> chance to accept the other's culture and traditions and <br>gives you the ability to adapt to the circumstances you live <br>in this city with those people.</p>
+        </div>
+        <div class="bp">
+         <img src="images/tp6.jpg">
+        </div>
+    </div>
+         <div class="breath">
+              <div class="text">
+                              <p id="brp"> Let’s Hike and </p>
+                              <p id="brp1"> Breath</p>
+                              <hr id="hr1">
+                              <p id="brp2"> Avoid travelling alone, even in major cities and tourist sites  </p>
+                              <a class="plus" href="#">+</a>
+                              <hr id="hr2">
+                              <p id="brp3">Travellers have been robbed and assaulted after consuming </p>
+                              <a class="plus" href="#">+</a>
+                              <hr id="hr3">
+                              <p id="brp4">Don't leave your food or drinks unattended or accept food </p>
+                              <a class="plus" href="#">+</a>
+                              <hr id="hr4">
+              </div>
+              <div class="brp">
+              <img src="images/tp7.jpg">
+              </div>
+         </div>
+         <div class="say"> 
+              <p> Here’s what they <br> have to say... </p>
+         </div>
+          <div class="names">
+                       <a class="arrow1" href="#"> &#8594; </a>
+                       <a class="arrow2" href="#"> &#8592; </a> 
+                      <div class="mehar">
+                       <img src="images/pi.png"> 
+                       <p id="nm1"> Mehar Ramgarhia </p> 
+                       <p id="nm2">We are all travelers in the wilderness of<br> this world, and the best we can find in<br> our travels is an honest friend.</p>
+                      </div>
+                      <div class="supra">
+                       <img src="images/pi.png"> 
+                       <p id="ns1"> Supravati Acharya </p> 
+                       <p id="ns2">The more I traveled the more I realized <br> that fear makes strangers of people <br> who should be friends.</p>
+                      </div>
+                      <div class="bharat">
+                       <img src="images/pi.png"> 
+                       <p id="nb1"> Bharat Bisht </p> 
+                       <p id="nb2">Life was meant for great adventures<br> and close friends. Always say yes to<br> new adventures.</p>
+                      </div>
+          </div>
+             <div class="form">
+                     <div class="ft">
+                       <p id="fh"> Be Updated! </p>
+                       <p id="fn">
+	               <input type="text" size="65" placeholder="First Name*" name="name">
+                       </p>
+                       <p id="ln">
+	               <input type="text" size="65" placeholder="Last Name*" name="name">
+                       </p>
+                       <p id="em">
+	               <input type="text" size="65" placeholder="Email*" name="name">
+                       </p>
+                       <p id="wsh">
+                       <textarea placeholder="Write Something Here..."> </textarea>
+                       </p>
+                       <button id="tb"> Submit </button>
+                      </div>
+                      <div class="fp">
+                       <img src="images/tp8.jpg"> 
+                      </div>
+             </div>
+          <div class="footer">
+                 <p id="fop"> My Travel <br> Vlogs </p> 
+                    <div class="links">
+                                <p id="ql"> Quick Links </p>
+                                <a class="lk" href="#">Home</a>
+                                <a class="lk" href="#">About Us </a>
+                                <a class="lk" href="#">My Travel Vlogs</a>    
+                    </div>
+                    <div class="links1">
+                                <a class="lk" href="#">Travels</a>
+                                <a class="lk" href="#">Promo Flights</a>
+                                <a class="lk" href="#">Travel Routes </a>    
+                    </div>
+                    <div class="links2">
+                                <a class="lk" href="#">Vlogs</a>
+                                <a class="lk" href="#">Guides</a>
+                                <a class="lk" href="#">Recommendations </a>    
+                    </div>
+                    <div class="links3">
+                                <a class="lk" href="#">Mission Statement</a>
+                                <a class="lk" href="#">The Team</a>
+                                <a class="lk" href="#">Contact Us</a>    
+                    </div>
+       </div>  
+         <div class="footer2">
+             <p>2023 - 2024 My Travel VLogs . All right reserved &copy;</p>
+             <p> With all &hearts; MyTravelVlogs</p>
+         </div>
+</div>
+</body>
+</html>
